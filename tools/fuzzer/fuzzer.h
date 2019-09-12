@@ -134,5 +134,9 @@ int parse_tplg(struct fuzz *fuzzer, char *tplg_filename);
 
 extern struct fuzz_platform byt_platform;
 extern struct fuzz_platform cht_platform;
+extern struct fuzz_platform hsw_platform;
+extern struct fuzz_platform bdw_platform;
+
+extern pthread_cond_t cond;
 
 #endif
