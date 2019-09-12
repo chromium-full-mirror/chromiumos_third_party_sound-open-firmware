@@ -280,7 +280,6 @@ static int hsw_irq_handler(int irq, void *context)
 	uint32_t isr;
 	int ret = IRQ_NONE;
 
-
 	/* Interrupt arrived, check src */
 	isr = dsp_read(fuzzer, HSW_DSP_BAR, SHIM_ISRX);
 	if (isr & (SHIM_ISRX_DONE | SHIM_ISRX_BUSY))
@@ -295,7 +294,6 @@ static int hsw_irq_thread(int irq, void *context)
 	struct hsw_data *data = fuzzer->platform_data;
 	uint32_t ipcx, ipcd;
 	uint32_t imrx;
-
 
 	imrx = dsp_read(fuzzer, HSW_DSP_BAR, SHIM_IMRX);
 	ipcx = dsp_read(fuzzer, HSW_DSP_BAR, SHIM_IPCX);
