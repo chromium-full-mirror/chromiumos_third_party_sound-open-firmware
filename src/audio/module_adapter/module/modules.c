@@ -149,6 +149,7 @@ static int modules_init(struct processing_module *mod)
 
 		mod->sys_service = &native_system_service;
 		ret = mod_in->init(mod);
+		mod->priv.ops = mod_in;
 	} else {
 		ret = iadk_wrapper_init(md->module_adapter);
 	}
