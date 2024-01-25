@@ -200,6 +200,7 @@ enum mod_type {
 	ecopier,
 	epeakvol,
 	eupdwmix,
+	edebug,
 	emux,
 	esrc,
 	ewov,

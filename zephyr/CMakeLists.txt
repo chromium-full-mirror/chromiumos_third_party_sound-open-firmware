@@ -835,6 +835,10 @@ zephyr_library_sources_ifdef(CONFIG_COMP_UP_DOWN_MIXER
 	${SOF_AUDIO_PATH}/up_down_mixer/up_down_mixer_hifi3.c
 )
 
+zephyr_library_sources_ifdef(CONFIG_COMP_DEBUG_MODULE
+	${SOF_AUDIO_PATH}/debug_module/debug_module.c
+)
+
 zephyr_library_sources_ifdef(CONFIG_COMP_MUX
 	${SOF_AUDIO_PATH}/mux/mux.c
 	${SOF_AUDIO_PATH}/mux/mux_generic.c

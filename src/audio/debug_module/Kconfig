@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: BSD-3-Clause
+
+config COMP_DEBUG_MODULE
+	bool "DEBUG_MODULE component"
+	default n
+        depends on IPC_MAJOR_4
+        help
+         Debug module component
+
